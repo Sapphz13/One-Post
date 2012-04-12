@@ -1,24 +1,20 @@
 package aberystwythUni.cs394.slr7;
 
 import java.util.ArrayList;
+import android.app.Activity;
 
-public class Posting 
+public class Posting extends Activity
 {
 	//private emun photo, audio, text;
 	private String link;
-	
-	
+
 	public String getLink() {
 		return link;
 	}
-
-
 	public void setLink(String link) {
 		this.link = link;
 	}
-
-
-	public ArrayList<String> PostPhoto()
+	public static ArrayList<String> PostPhoto()
 	{
 		ArrayList<String> photoLinks = new ArrayList<String>();
 	/*	scale photo
@@ -29,14 +25,11 @@ public class Posting
 	*		LinkedIn
 	*	upload link to Twitter*/
 		return photoLinks; 
-
+		/*?Preferred photo site
+		*upload to preference
+		*title+link to other sites   <- flickr/twitpic? mutulaly exclusive */
 	}
-//?Preferred photo site
-//upload to preference
-//title+link to other sites   <- flickr/twitpic? mutulaly exclusive
-
-
-	public ArrayList<String> PostAudio()
+	public static ArrayList<String> PostAudio()
 	{
 			ArrayList<String> audioLinks = new ArrayList<String>();
 /*			if (audio.length < limit)
@@ -49,15 +42,14 @@ public class Posting
 	*					to LinkedIn  */
 				return audioLinks;
 	}
-
-	public ArrayList<String> PostText()
+	public static ArrayList<String> PostText()
 	{
 		ArrayList<String> text = new ArrayList<String>();
 		ArrayList<String> textLinks = new ArrayList<String>();
 		if (text.size() < 140)
 		{
 	/*		upload  to Twitter
-	*			to facebook status
+	*			to FaceBook status
 	*			to Google+
 	*			to LinkedIn*/
 			return textLinks;
@@ -86,6 +78,7 @@ public class Posting
 	*				to LinkedIn*/
 			return textLinks;
 		}
-		return null;
+		return null;		
+		
 	}
 }

@@ -2,25 +2,55 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:gravity="center_vertical"
+    android:gravity="bottom|center_vertical"
     android:orientation="vertical" >
+    
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margins"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/done_like_this" />
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_margin="@dimen/margins"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:text="@string/Hai"
-        android:textStyle="bold" />
+        <EditText
+            android:id="@+id/textUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margins"
+            android:layout_weight="1"
+            android:capitalize="sentences"
+            android:hint="@string/example_status"
+            android:autoLink="web"
+            android:linksClickable="false"
+            android:clickable="true"          
+			android:inputType="text" />
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="top"
-        android:layout_margin="@dimen/margins"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:text="@string/application_description" />
+        <Button
+            android:id="@+id/addImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margins"
+            android:layout_weight="1"
+            android:text="@string/imageButton" />
+
+
+        <Button
+            android:id="@+id/addAudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margins"
+            android:layout_weight="1"
+            android:text="@string/audioButton" />
+
+        <Button
+            android:id="@+id/postButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margins"
+            android:layout_weight="1"
+            android:text="@string/postButton" />
+        
 
 </LinearLayout>

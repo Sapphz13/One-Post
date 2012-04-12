@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:gravity="center_vertical"
+    android:gravity="bottom|center_vertical"
     android:orientation="vertical" >
 
     <TextView
@@ -17,10 +17,39 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_gravity="top"
+        android:layout_gravity="center_horizontal"
         android:layout_margin="@dimen/margins"
         android:layout_weight="1"
         android:gravity="center"
         android:text="@string/application_description" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margins"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/author" />
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins"
+        android:layout_weight="1"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/onepostlogo" />
+    
+    <Button
+        android:id="@+id/splashButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margins"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/nextButton" />
 
 </LinearLayout>

@@ -15,17 +15,18 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
-        android:icon="@drawable/onepostlogo"
+        android:icon="@drawable/onepostbadge"
         android:label="@string/application_name" >
         <activity
         	android:name=".OnePostMain"
-        	android:label="@string/application_name" >
+        	android:label="@string/application_name"
+        	android:screenOrientation="portrait" >
         	<intent-filter>
 	            <action android:name = "android.intent.action.MAIN" />
-    	     	
-    	     	<category android:name = "android.intent.category.LAUNCHER" />
+    	 	   	<category android:name = "android.intent.category.LAUNCHER" />
         	</intent-filter>
         </activity>
+        
     </application>
 
 </manifest>

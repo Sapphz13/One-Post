@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="Hai">Hai, welcome to this little application.</string>
+    <string name="Hai">Hai, welcome to this little application. This application has been created as part of my university dissertation. </string>
     <string name="application_name">One-Post</string>
-    <string name="application_description">Distribution of social updates to popular social networking sites from the Android platform.</string>
+    <string name="application_description">One-Post distributes social updates to popular social networking sites, saving you the hasel of logging into each one and sharing the same thing on each one.</string>
+    <string name="nextButton">Continue</string>
+    <string name="logo_description">One Post Logo, speech buble with 1 in it.</string>
+    <string name="author">Author - Steph Reveley</string>
+    <string name="done_like_this">One-Post takes the content you put in here and filters it to decided what it is. Then One-Post uploads it to all your social networks for you. </string>
+    <string name="example_status">Hello world, this is my update.</string>
+    <string name="postButton">Post content.</string>
+    <string name="imageButton">Add a photo.</string>
+    <string name="audioButton">Add a audio clip.</string>
 
 </resources>
